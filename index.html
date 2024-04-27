@@ -1,0 +1,742 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive burger website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes"
+        viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+    </svg>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body class="bg-blue-800">
+    <!-----head----->
+    <header class="bg-blue-600 w-[100%] z-50 fixed top-0 left-0 ">
+
+        <nav class="text-white container relative h-14 flex justify-between items-center px-6 lg:w-[90%] lg:m-[auto]">
+            <div>
+                <a href="" class="text-2xl uppercase">
+                    bur<span class="text-yellow-400 font-sans">ger</span>
+                </a>
+            </div>
+            <div class=" hidden absolute top-0 left-0 w-full py-14 bg-blue-800 md:block md:static md:py-0 md:border-none 
+            md:w-[auto] ml-auto md:bg-transparent" id="nav-manu">
+                <ul class="flex flex-col text-center gap-5 
+                 md:flex-row">
+                    <li class="nav_link hover:text-red-600">
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li class="nav_link hover:text-red-600">
+                        <a href="#about">About us</a>
+                    </li>
+                    <li class="nav_link hover:text-red-600">
+                        <a href="#menu">menu</a>
+                    </li>
+
+                    <li class="nav_link hover:text-red-600">
+                        <a href="#review">review</a>
+                    </li>
+                    <li class="nav_link hover:text-red-600 ease-in duration-200 ">
+                        <a href="#contact">contact</a>
+                    </li>
+
+                </ul>
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer  md:hidden" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="flex items-center gap-[25px]">
+                <div>
+                    <svg class=" inline-block w-5 cursor-pointer text-xl ml-4" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+
+                </div>
+
+                <div id="hamburger">
+                    <svg class=" inline-block w-[26px] cursor-pointer text-xl md:hidden"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-----home----->
+    <section class="pt-16 pb-4 md:pb-20" id="home">
+        <div class="container flex flex-col gap-[0px] md:flex-row md:m-[auto] md:items-center lg:w-[80%] lg:m-[auto]">
+            <div class="mx-[auto]  lg:m-[auto] lg:fex jutify-center lg:w-[40%]">
+                <img src="../img/pexels-tatiana-11278221.jpg" alt="" class="w-60 md:w-[90%] lg:w-[80%]">
+            </div>
+            <div class="text-center md:base md:text-start lg:w-[40%]">
+                <h1 class="text-4xl font-sans font-bold uppercase text-white lg:text-5xl">HAPPY TUMMY WITH TASTY BURGER
+                </h1>
+                <div class="seperatop mx-[auto] my-[20px] md:mx-[0px]"></div>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, consectetur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam?
+                </p>
+                <div class="flex justify-center mt-[10px] py-[30px] items-center text-base md:justify-start gap-[40px]">
+                    <div class="flex justify-center flex-col items-center text-white text-2xl ">
+                        <svg class=" text-center text-yellow-600 w-[30px]" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                        </svg>
+                        <p class="pt-[6px]">delicious</p>
+
+                    </div>
+                    <div class="flex justify-center flex-col items-center text-white text-2xl ">
+                        <svg class="text-yellow-600  w-[30px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.867 19.125h.008v.008h-.008v-.008Z" />
+                        </svg>
+                        <p class="pt-[6px]">fresh</p>
+
+                    </div>
+
+                    <div class="flex justify-center flex-col items-center text-white text-2xl ">
+                        <svg class="text-yellow-600 w-[30px] flex justify-center" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                        </svg>
+
+                        <p class="pt-[6px]">organic</p>
+                    </div>
+                </div>
+                <a class="text-sm inline-block py-[8px] px-[11px] text-center cursor-pointer rounded-md ease linear-duration-200 bg-yellow-500 hover:bg-opacity-75"
+                    href="#">learn
+                    more</a>
+            </div>
+
+        </div>
+    </section>
+    <!-----catigory------>
+    <section id="catigory ">
+        <div class="flex flex-col gap-5 md:flex-row md:w-[90%] md:m-[auto]">
+            <div class="w-[90%] m-[auto]">
+                <!------card 1------>
+                <div class="flex bg-yellow-500 py-3 rounded-lg  overflow-hidden lg:w-[80%] lg:m-[auto] ">
+                    <div class="basis-1/3 relative ">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt=""
+                            class="absolute w-28 -buttom-4 -left-4">
+                    </div>
+
+                    <div class="text-white">
+                        <div>
+                            <h4 class="text-xl font-sans font-bold uppercase">food</h4>
+                            <p class="text-sm ">Lorem ipsum dolor sit amet.</p>
+
+                        </div>
+                        <a class="text-black cursor=pointer" href="#">Buy online</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-[90%] m-[auto]">
+                <!------card 2------>
+                <div class="flex bg-red-500 py-3 rounded-lg  overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative ">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt=""
+                            class="absolute w-28 -buttom-4 -left-4">
+                    </div>
+
+                    <div class="text-white">
+                        <div>
+                            <h4 class="text-xl font-sans font-bold uppercase">food</h4>
+                            <p class="text-sm ">Lorem ipsum dolor sit amet.</p>
+
+                        </div>
+                        <a class="text-green-600 cursor=pointer" href="#">Buy online</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-[90%] m-[auto]">
+                <!------card 3------>
+                <div class="flex bg-green-500 py-3 rounded-lg  overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative ">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt=""
+                            class="absolute w-28 -buttom-4 -left-4">
+                    </div>
+
+                    <div class="text-white">
+                        <div>
+                            <h4 class="text-xl font-sans font-bold uppercase">food</h4>
+                            <p class="text-sm ">Lorem ipsum dolor sit amet.</p>
+
+                        </div>
+                        <a class="text-yellow-400 cursor=pointer" href="#">Buy online</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-----promo----->
+    <section id="promo">
+        <div class="container flex flex-col gap-5 lg:flex-row lg:gap lg:w-[90%] lg:m-[auto]">
+            <div class="flex flex-col px-[6px] py-[10px] bg-blue-600 mt-[40px] rounded-lg items-cente  justify-center
+            md:flex-row md:items-cente lg:flex-row-reverse lg:flex-1 lg:items-center md:mx-5">
+                <!------card 1---------->
+                <img src="../img/avatar.png" alt="" class="w-40 mx-auto ">
+                <div class="space-y-2 pt-5 pt-0">
+                    <p class="text-xs text-yellow-800"> pay day promo</p>
+                    <h2 class="text-2xl font-bold text-white">get a 10% discount on pay week</h2>
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam!
+                    </p>
+                    <a class="text-sm text-yellow-800" href="#">buy online</a>
+                </div>
+            </div>
+            <div class="flex flex-col px-[6px] py-[10px] bg-blue-600 mt-[40px] rounded-lg items-cente  justify-center 
+            md:flex-row md:items-cente lg:flex-row-reverse lg:flex-1 lg:items-center">
+                <!------card 2---------->
+                <img src="../img/avatar.png" alt="" class="w-40 mx-auto md:mx-5">
+                <div class="space-y-2 pt-5 pt-0">
+                    <p class="text-xs text-yellow-800"> pay day promo</p>
+                    <h2 class="text-2xl font-bold text-white">get a 10% discount on pay week</h2>
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam!
+                    </p>
+                    <a class="text-sm text-yellow-800" href="#">buy online</a>
+                </div>
+            </div>
+            <!-- <div class="flex flex-col px-[6px] py-[5px] bg-blue-600 mt-[40px] rounded-lg items-cente  justify-cente ">
+                
+                <img src="../img/avatar.png" alt="" class="w-40 mx-auto ">
+                <div class="space-y-2 pt-5">
+                    <p class="text-xs text-yellow-800"> pay day promo</p>
+                    <h2 class="text-2xl font-bold text-white">get a 10% discount on pay week</h2>
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam!
+                    </p>
+                    <a class="text-sm text-yellow-800" href="#">buy online</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!------about us------>
+    <section id="about">
+        <div class=" flex flex-col gap-10 text-white w-[90%] m-[auto] mt-[50px] md:flex-row mb-[30px]">
+            <div class="flex-1 flex justify-center"><img src="../img/sqi logo.jpg" alt="" class="rounded-lg md:h-60%">
+            </div>
+            <div class="flex-1">
+                <h2 class="secondary uppercase">find food and drinks all-in-one place for your best tast</h2>
+                <div class="seperatop my-[20px]"></div>
+                <div>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Quae placeat eligendi optio expedita quo magni doloribus
+                        eveniet praesentium! Praesentium itaque nesciunt quae porro
+                        veniam hic ullam obcaecati ex, incidunt fuga?</p>
+                    <ul class="grid grid-cols-2 gap-[20px] mt-[20px]">
+                        <li class="flex items-center gap-4"><svg class="text-yellow-800 w-6"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            best price</li>
+
+                        <li class="flex items-center gap-4">
+                            <svg class="text-yellow-800 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            best services
+                        </li>
+                        <li class="flex items-center gap-4"><svg class="text-yellow-800 w-6"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            freash ingregent</li>
+                        <li class="flex items-center gap-4"><svg class="text-yellow-800 w-6"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                            Health protocol</li>
+
+                    </ul>
+                    <a class="px-[15px] py-[10px] bg-yellow-500 text-center inline-block rounded-lg mt-[10px]"
+                        href="#">About us</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------menu-->
+    <section id="menu">
+        <div class="w-[90%] m-[auto] text-center">
+            <h2 class="secondary">OUR BEST MENU</h2>
+            <div class="flex justify-center items-center">
+                <div class="seperatop "></div>
+            </div>
+            <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat laboriosam, commodi quidem accusamus aliquam ex?</p>
+            <div class="flex flex-wrap justify-center gap-3 py-10 ">
+                <div class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">
+                    <p>All</p>
+                </div>
+                <div class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">
+                    <p>Food</p>
+                </div>
+                <div>
+                    <P class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">Snack</P>
+                </div>
+                <div>
+                    <p class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">Beverage</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="grid grid-cols-1 gap-[40px] w-[90%] m-[auto] md:grid-cols-2 lg:grid-cols-3">
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">RUGULAR BEEF BURGER</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">FRENCH FRIES</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">SWEET SMOOTHIE</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">SWEET DRINKS</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">SWEET SMOOTHIE</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">SWEET SMOOTHIE</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">SWEET SMOOTHIE</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        class="h-56 grid w-[] place-items-center bg-blue-200 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                        <img src="../img/pexels-florian-eckerle-15382302 (1).jpg" alt="" class="w-40 hover:scale-110 ease-linear
+                                                         duration-200">
+                    </div>
+                    <div>
+                        <div>
+                            <h4 class="secondary pt-[20px]">SWEET SMOOTHIE</h4>
+                            <p class="paragraph py-[6px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                illo
+                                nobis
+                                of.</p>
+
+
+                        </div>
+                        <p class="text-yellow-700 text-lg">$45.00</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-----revew-->
+    <section id="review " class="bg-blue-600 py-20 mb-0">
+        <div class="container ">
+            <div class="w-[90%] mx-[auto] text-center">
+                <h2 class="secondary uppercase">customer review</h2>
+                <div class="flex justify-center items-center">
+                    <div class="seperatop "></div>
+                </div>
+                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat laboriosam, commodi quidem accusamus aliquam ex?</p>
+
+
+                <div class="swiper py-10">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-2 rounded-lg py-[10px] px-[10px] bg-blue-800 ">
+                                <p class="paragraph text-start">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Earum ullam veniam quia at amet facere illum maiores?
+                                </p>
+                                <div class="flex   items-start gap-[10px] space-between items-center">
+                                    <img src="./img/WIN_20240118_18_14_41_Pro.jpg" alt=""
+                                        class="w-12 h-12 rounded-full">
+                                    <div class="flex flex-col flex-start text-start ">
+                                        <p class="font-sans  font-semibold uppercase  text-white">sooto samad</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="bi bi-chat-right-quote text-3xl text-white text-yellow-600 ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-2 rounded-lg py-[10px] px-[10px] bg-blue-800 ">
+                                <p class="paragraph text-start">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Earum ullam veniam quia at amet facere illum maiores?
+                                </p>
+                                <div class="flex   items-start gap-[10px] space-between items-center">
+                                    <img src="./img/WIN_20240118_18_14_41_Pro.jpg" alt=""
+                                        class="w-12 h-12 rounded-full">
+                                    <div class="flex flex-col flex-start text-start ">
+                                        <p class="font-sans  font-semibold uppercase  text-white">sooto samad</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="bi bi-chat-right-quote text-3xl text-white text-yellow-600 ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-2 rounded-lg py-[10px] px-[10px] bg-blue-800 ">
+                                <p class="paragraph text-start">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Earum ullam veniam quia at amet facere illum maiores?
+                                </p>
+                                <div class="flex   items-start gap-[10px] space-between items-center">
+                                    <img src="./img/WIN_20240118_18_14_41_Pro.jpg" alt=""
+                                        class="w-12 h-12 rounded-full">
+                                    <div class="flex flex-col flex-start text-start ">
+                                        <p class="font-sans  font-semibold uppercase  text-white">sooto samad</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="bi bi-chat-right-quote text-3xl text-white text-yellow-600 ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-2 rounded-lg py-[10px] px-[10px] bg-blue-800 ">
+                                <p class="paragraph text-start">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Earum ullam veniam quia at amet facere illum maiores?
+                                </p>
+                                <div class="flex   items-start gap-[10px] space-between items-center">
+                                    <img src="./img/WIN_20240118_18_14_41_Pro.jpg" alt=""
+                                        class="w-12 h-12 rounded-full">
+                                    <div class="flex flex-col flex-start text-start ">
+                                        <p class="font-sans  font-semibold uppercase  text-white">sooto samad</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="bi bi-chat-right-quote text-3xl text-white text-yellow-600 ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-padination"></div>
+                </div>
+
+
+                <!-- <div class="flex flex-wrap justify-center gap-3 py-10 ">
+            <div class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">
+                <p>All</p>
+            </div>
+            <div class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">
+                <p>Food</p>
+            </div>
+            <div>
+                <P class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">Snack</P>
+            </div>
+            <div>
+                <p class="bg-blue-400 py-5 px-10 rounded-lg hover:bg-yellow-700 eals-in duration-200">Beverage</p>
+            </div>
+        </div> -->
+            </div>
+        </div>
+    </section>
+    <!----contarct-->
+    <section class="contact bg-yellow-700 py-16 mb-[30px]">
+        <div
+            class="flex flex-col w-[90%] mx-[auto] gap-5 md:items-center md:gap-[70px] md:flex-row md:w-[75%] m-[auto]">
+            <div class="flex-1 space-y-4">
+                <h2 class="secondary uppercase text-black">get exclusive updates</h2>
+                <p class="paragraph text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis enim
+                    quas architecto!</p>
+            </div>
+            <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                <input type="email" placeholder="Email address" class="p-2 text-black rounded-lg outline-none md:full">
+                <a class="flex items-center text-white justify-center gap-2 bg-black btn hover:bg-opacity-75" href=""><i
+                        class="bi bi-send"></i>
+                    Subscribe</a></input>
+            </div>
+        </div>
+    </section>
+    <!----footer-->
+    <section class="footer">
+        <div class="container w-[90%] m-[auto]">
+            <ul class="grid grid-cols-1 items-start pb-5 gap-5 md:grid-cols-2 lg:grid-cols-4">
+                <li>
+                    <div class="space-y-3">
+                        <a href="" class="text-4xl font-semibold uppercase">
+                            bur<span class="text-yellow-400 ">ger</span>
+                        </a>
+
+                        <p class="text-xs text-white">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Fuga ullam recusandae tempora accusantium corrupti placeat deleniti
+                            assumenda voluptate?
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex flex-col gap-2 text-white">
+                        <h3 class="text-lg uppercase font-bold">
+                            support
+                        </h3>
+                        <a class=".text-xs hover:text-yellow-400" href="">FAQ's</a>
+                        <a class=".text-xs hover:text-yellow-400" href="">Private policy</a>
+                        <a class=".text-xs hover:text-yellow-400" href="">Tetm & Condition</a>
+                        <a class=".text-xs hover:text-yellow-400" href="">contact</a>
+
+                    </div>
+                </li>
+
+                <li class="space-y-8 text-white">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-bold ">phone</h3>
+
+
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="bi bi-telephone-fill text-lg text-yellow-600"></i>
+
+                            *1 000 000 0000
+
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-bold">email</h3>
+
+
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="bi bi-envelope-at-fill text-lg text-yellow-600"></i>
+
+
+                            burger.info@email.com
+
+                        </p>
+                    </div>
+
+                </li>
+
+                <li class="space-y-8 text-white">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-bold">Adress</h3>
+
+
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="bi bi-geo-alt-fill"></i>
+
+
+
+                            address goes here
+
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-bold">Follow us</h3>
+
+
+                        <div class="space-x-3">
+                            <i
+                                class="bi bi-facebook text-lg text-yellow-600 hover:-translate-y-1 ease-in duration-200"></i>
+                            <i
+                                class="bi bi-twitter-x text-lg text-yellow-600 hover:-translate-y-1 ease-in duration-200"></i>
+                            <i
+                                class="bi bi-instagram text-lg text-yellow-600 hover:-translate-y-1 ease-in duration-200"></i>
+
+
+
+
+                        </div>
+
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="flex flex-col items-center border-t border-yellow-300 py-5 md:flex-row md:justify-between">
+                <p class="paragraph">Burger Template Kit by Light code</p>
+                <p class="paragraph">Copyright 0 2024 all right researved</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableoninteraction: false
+
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+
+                },
+                // when window width is >=768px
+                768: {
+                    slidesPerView: 2,
+
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+
+                }
+            }
+
+        });
+    </script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

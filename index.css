@@ -1,0 +1,23 @@
+.seperatop{
+    width: 30%;
+    height: 2px;
+    background-color: yellow ;
+    padding: 2px 0px;
+    margin: 6px 0px;
+    
+}
+.paragraph{
+    color: white;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+.secondary{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: normal;
+}
+.btn{
+    padding: 5px 30px;
+    border-radius: 6px;
+}
